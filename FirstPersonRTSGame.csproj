@@ -1,0 +1,52 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net6.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <LangVersion>latest</LangVersion>
+    <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
+    <ProduceReferenceAssembly>false</ProduceReferenceAssembly>
+    <SuppressNETCoreSdkPreviewMessage>true</SuppressNETCoreSdkPreviewMessage>
+    <EnableDefaultCompileItems>false</EnableDefaultCompileItems>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Silk.NET.Core" Version="2.22.0" />
+    <PackageReference Include="Silk.NET.Input" Version="2.22.0" />
+    <PackageReference Include="Silk.NET.OpenGL" Version="2.22.0" />
+    <PackageReference Include="Silk.NET.Windowing" Version="2.22.0" />
+    <PackageReference Include="SixLabors.Fonts" Version="2.1.2" />
+    <PackageReference Include="SixLabors.ImageSharp" Version="3.1.7" />
+    <PackageReference Include="SixLabors.ImageSharp.Drawing" Version="2.1.5" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="FirstPersonRTSGame.Engine\Engine.csproj">
+      <Private>true</Private>
+    </ProjectReference>
+    <ProjectReference Include="FirstPersonRTSGame.Game\Game.csproj">
+      <Private>true</Private>
+    </ProjectReference>
+  </ItemGroup>
+
+  <!-- Exclude any auto-generated assembly attribute files -->
+  <ItemGroup>
+    <Compile Remove="obj\**\*.AssemblyAttributes.cs" />
+    <Compile Remove="FirstPersonRTSGame.Game\obj\**\*.AssemblyAttributes.cs" />
+    <Compile Remove="FirstPersonRTSGame.Engine\obj\**\*.AssemblyAttributes.cs" />
+  </ItemGroup>
+
+  <!-- Explicitly define what files to include and exclude -->
+  <ItemGroup>
+    <!-- Only include .cs files in the root directory -->
+    <Compile Include="*.cs" />
+    
+    <!-- Exclude all source files from Engine and Game directories to avoid duplicates -->
+    <Compile Remove="FirstPersonRTSGame.Engine\**\*.cs" />
+    <Compile Remove="FirstPersonRTSGame.Game\**\*.cs" />
+  </ItemGroup>
+
+</Project>

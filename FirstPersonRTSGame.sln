@@ -1,0 +1,33 @@
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.31903.59
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FirstPersonRTSGame", "FirstPersonRTSGame.csproj", "{90CEBA9A-9B2F-4C56-9B5F-E19CFC964857}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FirstPersonRTSGame.Engine", "FirstPersonRTSGame.Engine\Engine.csproj", "{D4D1580A-6776-4DC2-B90E-AB9B6AEF01CF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FirstPersonRTSGame.Game", "FirstPersonRTSGame.Game\Game.csproj", "{77A9C3A2-F9A6-4E67-87B4-3A9B4E7DEEAB}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{90CEBA9A-9B2F-4C56-9B5F-E19CFC964857}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{90CEBA9A-9B2F-4C56-9B5F-E19CFC964857}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{90CEBA9A-9B2F-4C56-9B5F-E19CFC964857}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{90CEBA9A-9B2F-4C56-9B5F-E19CFC964857}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D4D1580A-6776-4DC2-B90E-AB9B6AEF01CF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D4D1580A-6776-4DC2-B90E-AB9B6AEF01CF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D4D1580A-6776-4DC2-B90E-AB9B6AEF01CF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D4D1580A-6776-4DC2-B90E-AB9B6AEF01CF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{77A9C3A2-F9A6-4E67-87B4-3A9B4E7DEEAB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{77A9C3A2-F9A6-4E67-87B4-3A9B4E7DEEAB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{77A9C3A2-F9A6-4E67-87B4-3A9B4E7DEEAB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{77A9C3A2-F9A6-4E67-87B4-3A9B4E7DEEAB}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal 

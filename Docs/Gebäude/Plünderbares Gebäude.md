@@ -1,0 +1,1 @@
+Ein [[Gebäude]] welches von allen [[Spieler|Spielern]] benutzt werden kann.

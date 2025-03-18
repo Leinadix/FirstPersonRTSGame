@@ -1,0 +1,1 @@
+[[Munition]] welche nach Abschuss im [[Wasser]] verbleibt und bei Berührung mit [[Gegner|gegnerischem]] [[Schiffe|Schiff]] explodiert. 

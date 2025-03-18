@@ -1,0 +1,1 @@
+[[Spieler]] des anderen Teams. 
