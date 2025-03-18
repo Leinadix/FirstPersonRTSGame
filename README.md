@@ -14,24 +14,35 @@ This project is a first-person RTS game prototype that combines first-person con
 - Ship controls and movement
 - Autonomous ship harvesting and resource delivery
 - OpenGL-based rendering
+- Voxel-based terrain with destructible environments
+- Day/night cycle affecting gameplay
 - Complete graphical user interface (UI) system
   - Crosshair and target information
   - Resource and inventory displays
   - Building and ship status panels
   - Interactive menus
-- Interactive objects and terrain
-- Enhanced graphical user interface (UI) system with:
-  * Modern, visually appealing design with rounded panels and consistent styling
-  * Smooth animations and transitions between UI elements
-  * Improved text rendering with outlines for better readability
-  * Interactive buttons with hover effects and tooltips
-  * Resource display with icons and text
-  * Target information panel that updates based on player selection
-  * Building menu with visual options and cost information
-  * Inventory system with resource tracking
-  * Help panel with organized game controls
-  * HUD elements like crosshair and status indicators
-  * Toast notification system for important game events
+  - Modern, visually appealing design with rounded panels and consistent styling
+  - Smooth animations and transitions between UI elements
+  - Improved text rendering with outlines for better readability
+  - Interactive buttons with hover effects and tooltips
+  - HUD elements like crosshair and status indicators
+  - Toast notification system for important game events
+
+## Documentation
+
+Comprehensive documentation is available in the [doc](doc/index.md) directory:
+
+- [Project Overview](doc/overview.md)
+- [Getting Started Guide](doc/getting-started.md)
+- [User Guide](doc/user-guide.md)
+- [API Reference](doc/api-reference.md)
+- [Troubleshooting](doc/troubleshooting.md)
+
+For developers:
+- [Engine Documentation](doc/Engine/README.md)
+- [Game Documentation](doc/Game/README.md)
+- [Test Documentation](doc/Tests/README.md)
+- [Development Workflow](doc/development-workflow.md)
 
 ## Controls
 
@@ -72,7 +83,7 @@ The game features a complete UI system built with OpenGL:
 
 ## Project Structure
 
-The project is split into two main parts:
+The project is split into three main parts:
 
 1. **Engine**: Core game systems and interfaces
    - Rendering
@@ -88,22 +99,32 @@ The project is split into two main parts:
    - World generation
    - UI system
 
-## Building and Running
+3. **Tests**: Unit and integration tests
+   - Test doubles
+   - Mocks
+   - Test categories
 
-### Prerequisites
+## Requirements
 
-- .NET 6.0 SDK or newer
+- .NET 6.0 SDK or later
+- Compatible with Windows, macOS, and Linux
+- Graphics card supporting OpenGL 4.5+
 - Silk.NET packages (automatically restored by NuGet)
 
-### Commands
+## Quick Start
 
-```bash
-# Build the project
-dotnet build
+1. Clone the repository
+2. Navigate to the project directory
+3. Build the project:
+   ```
+   dotnet build
+   ```
+4. Run the game:
+   ```
+   dotnet run --project FirstPersonRTSGame
+   ```
 
-# Run the game
-dotnet run
-```
+See the [Getting Started Guide](doc/getting-started.md) for detailed setup instructions.
 
 ## Technical Details
 
@@ -112,6 +133,10 @@ dotnet run
 - Employs an interface-based architecture to separate engine and game logic
 - Uses OpenGL for 3D rendering
 - Custom UI system with text rendering capabilities
+
+## Contributing
+
+We welcome contributions! Please see our [Development Workflow](doc/development-workflow.md) document for guidelines on contributing to the project.
 
 ## Future Improvements
 
@@ -124,4 +149,6 @@ dotnet run
 
 ## License
 
-This project is provided as a prototype and learning resource. 
+This project is licensed under Creative Commons Attribution-NonCommercial 4.0 International (CC BY-NC 4.0) with Commons Clause.
+
+See the [LICENSE.md](LICENSE.md) file for full details.
